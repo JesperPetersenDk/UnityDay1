@@ -6,7 +6,7 @@ using UnityEngine;
 public class InfoStripe : MonoBehaviour
 {
     public GameObject myPrefab;
-    public float ms;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,6 @@ public class InfoStripe : MonoBehaviour
         //1:
         //print("Hello world");
 
-        ms = 10F;
     }
 
     // Update is called once per frame
@@ -22,10 +21,6 @@ public class InfoStripe : MonoBehaviour
     {
         RespectInfo();
 
-        //opgave: 7...
-        transform.Translate(ms * Input.GetAxis("Horizontal") * Time.deltaTime,
-            0F,
-            ms * Input.GetAxis("Vertical") * Time.deltaTime);
     }
 
     public void OnClickButton1()
